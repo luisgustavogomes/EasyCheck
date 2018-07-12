@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.Double?>
+<?import java.net.URL?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="450.0" style="-fx-background-color: rgba(255,255,255,0);" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.qi.controller.LoginController">
+    <stylesheets>
+        <URL value="@../../../../mascaraBootstrap.css" />
+    </stylesheets>
+    <children>
+        <StackPane alignment="TOP_RIGHT" layoutX="35.0" layoutY="35.0">
+            <children>
+                <AnchorPane prefHeight="330.0" prefWidth="380.0" style="-fx-background-color: rgb(185,230,185); -fx-background-radius: 10px 110px 10px 10px;">
+                    <children>
+                        <HBox alignment="CENTER" layoutX="63.0" layoutY="65.0" spacing="20.0">
+                            <children>
+                                <FontAwesomeIconView fill="#00940a" glyphName="FILE_TEXT" size="40" />
+                                <Text fill="#00940a" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="EasyCheck">
+                                    <font>
+                                        <Font name="Microsoft Sans Serif" size="40.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </HBox>
+                        <HBox layoutX="77.0" layoutY="140.0" spacing="5.0">
+                            <children>
+                                <VBox alignment="CENTER" spacing="35.0">
+                                    <children>
+                                        <FontAwesomeIconView fill="#00940a" glyphName="USER" size="25" />
+                                        <FontAwesomeIconView fill="#00940a" glyphName="KEY" size="25" />
+                                    </children>
+                                </VBox>
+                                <VBox spacing="25.0">
+                                    <children>
+                                        <JFXTextField fx:id="txUsuario" labelFloat="true" prefHeight="25.0" prefWidth="200.0" promptText="Usuário:" unFocusColor="WHITE">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </JFXTextField>
+                                        <JFXPasswordField fx:id="pwSenha" labelFloat="true" prefHeight="25.0" prefWidth="200.0" promptText="Senha:" unFocusColor="WHITE">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </JFXPasswordField>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                    <effect>
+                        <DropShadow color="#00940a" height="100.0" radius="49.5" width="100.0" />
+                    </effect>
+                </AnchorPane>
+            </children>
+        </StackPane>
+        <JFXButton fx:id="btEntrar" contentDisplay="GRAPHIC_ONLY" layoutX="200.0" layoutY="295.0" onAction="#handlerBtEntrar">
+            <graphic>
+                <FontAwesomeIconView fill="#00940a" glyphName="CHEVRON_CIRCLE_RIGHT" size="40" />
+            </graphic>
+        </JFXButton>
+        <Polygon fill="#b9e6b9" layoutX="340.0" layoutY="50.0" rotate="180.0" stroke="#00940a" strokeWidth="0.0">
+            <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="10.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="-50.0" />
+                <Double fx:value="-15.0" />
+            </points>
+        </Polygon>
+        <Polygon fill="#b9e6b9" layoutX="405.0" layoutY="110.0" rotate="-180.0" stroke="#00940a" strokeWidth="0.0">
+            <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="10.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="-50.0" />
+                <Double fx:value="-15.0" />
+            </points>
+        </Polygon>
+        <Polygon fill="#b9d6af" layoutX="401.0" layoutY="53.0" stroke="#b9d6af" strokeWidth="3.0" style="-fx-border-radius: 5px; -fx-background-color: 5px;">
+            <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="10.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="-50.0" />
+                <Double fx:value="-15.0" />
+            </points>
+            <effect>
+                <DropShadow color="#00940a" height="50.0" offsetX="-3.0" offsetY="3.0" radius="24.5" width="50.0" />
+            </effect>
+        </Polygon>
+        <FontAwesomeIconView fx:id="btFechar" glyphName="REMOVE" layoutX="363.0" layoutY="83.0" onMouseClicked="#handlerBtFechar" size="16" />
+    </children>
+</AnchorPane>

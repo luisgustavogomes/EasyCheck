@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" maxHeight="420.0" maxWidth="800.0" minHeight="420.0" minWidth="800.0" prefHeight="420.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.qi.controller.EspelhoPontoController">
+    <stylesheets>
+        <URL value="@../../../../mascaraBootstrap.css" />
+    </stylesheets>
+    <children>
+        <VBox alignment="TOP_CENTER" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <HBox alignment="TOP_CENTER" maxHeight="100.0" minHeight="100.0" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="NEVER">
+                    <children>
+                        <VBox alignment="CENTER" maxHeight="100.0" maxWidth="200.0" minHeight="100.0" minWidth="200.0" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="NEVER">
+                            <children>
+                                <ImageView fx:id="imgLogo" fitHeight="80.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" />
+                            </children>
+                        </VBox>
+                        <VBox layoutX="350.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <HBox maxHeight="1.7976931348623157E308" VBox.vgrow="NEVER">
+                                    <children>
+                                        <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label styleClass="titulos" text="Folha Ponto" />
+                                            </children>
+                                        </HBox>
+                                        <HBox layoutX="81.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    </children>
+                                </HBox>
+                                <HBox>
+                                    <children>
+                                        <HBox maxWidth="290.0" minWidth="290.0" prefWidth="290.0" HBox.hgrow="NEVER">
+                                            <children>
+                                                <Label text="Empregador:" />
+                                                <Label fx:id="lbEmpregador" layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin></Label>
+                                            </children>
+                                        </HBox>
+                                        <HBox layoutX="10.0" layoutY="10.0" maxWidth="290.0" minWidth="290.0" prefWidth="290.0" HBox.hgrow="NEVER">
+                                            <children>
+                                                <Label text="Usuário:" />
+                                                <Label fx:id="lbUsuario" prefHeight="20.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin></Label>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </HBox>
+                                <HBox>
+                                    <children>
+                                        <HBox maxWidth="290.0" minWidth="290.0" prefWidth="290.0" HBox.hgrow="NEVER">
+                                            <children>
+                                                <Label text="CNPJ:" />
+                                                <Label fx:id="lbCNPJ" prefHeight="20.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin></Label>
+                                            </children>
+                                        </HBox>
+                                        <HBox layoutX="10.0" layoutY="10.0" maxWidth="290.0" minWidth="290.0" prefWidth="290.0" HBox.hgrow="NEVER">
+                                            <children>
+                                                <Label text="Atividade:" />
+                                                <Label fx:id="lbAtividade" prefHeight="20.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin></Label>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </HBox>
+                                <HBox maxHeight="20.0" minHeight="20.0" prefHeight="20.0">
+                                    <children>
+                                        <HBox maxWidth="290.0" minWidth="290.0" prefWidth="290.0" HBox.hgrow="NEVER" />
+                                        <HBox layoutX="10.0" layoutY="10.0" maxWidth="290.0" minWidth="290.0" prefWidth="290.0" HBox.hgrow="NEVER" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="20.0" minHeight="20.0" prefHeight="20.0" spacing="80.0" styleClass="list" VBox.vgrow="NEVER">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" HBox.hgrow="NEVER">
+                            <children>
+                                <Label styleClass="list" text="Data:">
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox>
+                            <children>
+                                <Label styleClass="list" text="Entrada:       " />
+                                <Label layoutX="10.0" layoutY="10.0" styleClass="list" text="Saída:        " />
+                                <Label layoutX="10.0" layoutY="10.0" styleClass="list" text="Entrada:       " />
+                                <Label layoutX="93.0" layoutY="10.0" styleClass="list" text="Saída:        " />
+                                <Label layoutX="165.0" layoutY="10.0" styleClass="list" text="Entrada:       " />
+                                <Label layoutX="248.0" layoutY="10.0" styleClass="list" text="Saída:        " />
+                                <Label layoutX="320.0" layoutY="10.0" styleClass="list" text="Entrada:       " />
+                                <Label layoutX="403.0" layoutY="10.0" styleClass="list" text="Saída:        " />
+                            </children>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="10.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <ListView fx:id="listaRegistro" styleClass="list" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <HBox alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="110.0" maxHeight="10.0" minHeight="10.0" prefHeight="10.0" VBox.vgrow="NEVER" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

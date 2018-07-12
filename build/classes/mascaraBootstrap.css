@@ -1,0 +1,371 @@
+* {
+    -fx-primary : #B9E6B9; /*verde claro*/
+    -fx-secondary : #00940a;
+    -fx-primarytext : #00940a; /*verde escuro*/
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-green: #2E7D32;
+    -fx-white: #FFFFFF
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Icones                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+.glyph-icon
+{
+    -fx-fill: -fx-primarytext;
+}
+
+.glyph-icon-folha
+{
+    -fx-fill: white;
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Botões                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+#button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 2px;
+    -fx-background-radius: 2px;
+    -fx-font-size: 10pt;
+}
+
+#button:hover{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+
+
+#btFechar{
+    -fx-font-size : 12pt;
+    -jfx-focus-color: -fx-primary;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Label, Text, TextField                                                               *
+ *                                                                             *
+ ******************************************************************************/
+
+#textMenu{    
+    -fx-font-size : 14pt;    
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-fill : derive(-fx-secondary, -5%);
+}
+.label {
+    -fx-font-size : 10pt;    
+    -jfx-focus-color: -fx-primarytext;
+    -fx-fill : derive(-fx-secondary, -5%);
+}
+
+
+.text-field, .text-area {
+    -fx-prompt-text-fill: black;
+    -fx-font-size : 10pt;
+    -jfx-unfocus-color: white;
+    -jfx-focus-color: -fx-primarytext;
+    /* -fx-text-fill: derive(-fx-secondary, 20%); */
+}
+
+.titulos{
+    -fx-font-size : 22pt;    
+    -jfx-focus-color: -fx-primarytext;
+    -fx-fill : -fx-primarytext;
+}
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * ComboBox                                                                    *
+ *                                                                             *
+ ******************************************************************************/
+.combo-box, .choice-box, .color-picker{    
+    -fx-prompt-text-fill: black;
+    -fx-font-size : 10pt;    
+    -jfx-unfocus-color: white;
+}
+
+.combo-box:focused, .choice-box:focused, .color-picker:focused{
+    -fx-font-size : 10pt;
+    -jfx-focus-color: -fx-primarytext;
+    /*-jfx-focus-color: -fx-primarytext;*/
+}
+
+.combo-box:focused {
+    -fx-font-size : 10pt;
+    -jfx-focus-color: -fx-primarytext;
+}
+
+.combo-box .choice-box, .color-picker {
+    -fx-font-size : 10pt;    
+    -jfx-unfocus-color: -fx-white;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * CheckBox                                                                    *
+ *                                                                             *
+ ******************************************************************************/
+
+.jfx-check-box {
+    -fx-font-size : 10pt;
+    -fx-text-fill: white;
+    -jfx-checked-color: TRANSPARENT;
+    -jfx-unchecked-color: white;
+}
+
+.jfx-check-box .mark{
+    -fx-font-size : 10pt;
+    -fx-text-fill: -fx-primarytext;
+    -fx-border-color: -fx-secondary;
+    -fx-background-color:-fx-secondary;
+}
+.jfx-check-box:selected .mark{
+    -fx-font-size : 10pt;
+    -fx-text-fill: -fx-primarytext;
+    -fx-border-color: -fx-secondary;
+    -fx-background-color:-fx-secondary;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Date-Picker                                                                    *
+ *                                                                             *
+ ******************************************************************************/
+
+.jfx-date-picker{
+    -jfx-default-color: -fx-secondary;
+}
+
+.jfx-date-picker,
+.jfx-date-picker:focused,
+.jfx-date-picker:focused:editable {
+    -fx-background-color: TRANSPARENT, TRANSPARENT, TRANSPARENT, TRANSPARENT;
+}
+
+.jfx-date-picker > .arrow-button,
+.jfx-date-picker:editable > .arrow-button,
+.jfx-date-picker:focused > .arrow-button,
+.jfx-date-picker:editable:focused > .arrow-button{
+    -fx-background-color: TRANSPARENT;
+    -fx-padding: 1 8 1 8;
+}
+
+.jfx-date-picker > .arrow-button > .jfx-svg-glyph{
+    -fx-background-color: -fx-secondary;
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * TabPane                                                                    *
+ *                                                                             *
+ ******************************************************************************/
+.tab{
+    -fx-background-color: -fx-primary;
+    -fx-pref-width : 350;
+    -fx-pref-height : 60;
+}
+
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size: 15px;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: derive(-fx-primarytext, 30%);
+}
+
+/*Menu bar Styling*/
+.menu-bar{
+    -fx-base : -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * TabPane                                                                    *
+ *                                                                             *
+ ******************************************************************************/
+.context-menu
+{
+    -fx-background-color:  derive(-fx-primary, 20%);
+}
+
+
+.context-menu
+{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size : 12pt;
+    -jfx-focus-color: -fx-secondary;
+    -jfx-unfocus-color: -fx-primary;
+    -fx-background-color:  derive(-fx-primary, 10%);
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-border-color: -fx-secondary; 
+    -fx-alignment: CENTER;
+    -fx-font-weight: bold;
+}
+
+.context-menu > * {
+    -fx-padding: 0 0 0 0;
+}
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Barra de Titulos                                                           *
+ *                                                                             *
+ ******************************************************************************/
+
+.title-bar{
+    -fx-background-color: linear-gradient(to right, -fx-primary, derive(-fx-primary, -5%), derive(-fx-primary, -20%));
+}
+
+
+/*Text styling*/
+.main-text
+{
+    -fx-fill: -fx-secondary;
+    -fx-font-size: 14pt;
+    -fx-text-alignment: center;
+}
+
+
+/*Custom window background*/
+.custom-pane{
+    -fx-background-color: derive(-fx-primary, 10%);
+}
+
+/*TableView Default*/
+.table-view{
+    -fx-background-color: derive(-fx-primary, 10%);
+    -fx-font-size: 16px; 
+}
+.table-view:focused{
+    -fx-background-color: derive(-fx-primary, 20%);
+}
+.table-row-cell {
+    -fx-cell-size: 40px;
+}
+.table-view .column-header-background{
+    -fx-background-color: -fx-primary;
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+.table-row-cell:focused, .table-cell:focused{
+    -fx-text-fill: -fx-primary;
+}
+.table-row-cell{
+    -fx-background-color: -fx-primary;
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+.table-column{
+    -fx-alignment: CENTER;  
+}
+.table-row-cell:even{
+    -fx-background-color: derive(-fx-primary, 10%);
+}
+.table-row-cell:selected {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+    -fx-background-insets: 0;
+}
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: -fx-primary;
+}
+.placeholder .label{
+    -fx-text-fill: white;
+}
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+.table-view > .virtual-flow > .scroll-bar > .increment-button, 
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-text-fill: white;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb{
+    -fx-background-color: derive(-fx-primary, 60%);
+    -fx-border-color: transparent;
+    -fx-background-radius: 5em;
+}
+.table-view .filler{
+    -fx-fill: -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+.table-context
+{
+    -fx-base: -fx-primary;
+}
+
+
+/*Dashboard label*/
+.not-available 
+{
+    -fx-background-radius: 5px;
+    -fx-fill: derive(blue, 80%);
+    -fx-cursor: hand;
+}
+
+/*
+.vbox#TelaFolha, .hbox#TelaFolha{
+}*/
+
+.borda-top{
+    -fx-border-color: black transparent transparent transparent;
+}
+.borda-left{
+    -fx-border-color: transparent transparent transparent black;
+}
+.borda-right{
+    -fx-border-color: transparent black transparent transparent;
+}
+.borda-bottom{
+    -fx-border-color:  transparent transparent black transparent;
+}
+
+.borda-total{
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.list{
+    -fx-font-size: 13px;
+}
